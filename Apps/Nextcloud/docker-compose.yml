@@ -1,4 +1,4 @@
-name: RFBESKOW-Nextcloud-Docker
+name: rfbeskow-nextcloud
 services:
   app:
     image: rfbeskow/nextcloud-custom
@@ -30,10 +30,10 @@ x-casaos:
     en_us: This software is a fork of library and licensed under the GPL v3 License.
   developer: RFBESKOW
   author: Roger Beskow
-  icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/nextcloud-icon.png
-  thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/nextcloud-icon.png
+  icon: https://raw.githubusercontent.com/engtro/CasaOS-rfbeskow-AppStore/main/img/nextcloud-icon.png
+  thumbnail: https://raw.githubusercontent.com/engtro/CasaOS-rfbeskow-AppStore/main/img/nextcloud-icon.png
   title:
     en_us: Nextcloud Customized image for support inotify, zipper, extract apps
-  category: RFBESKOW-CUSTOM
+  category: rfbeskow-custom
   project_url: https://github.com/engtro/Nextcloud-Custom
   port_map: '8089'
