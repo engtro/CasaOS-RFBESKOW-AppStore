@@ -1,0 +1,39 @@
+name: RFBESKOW-Nextcloud-Docker
+services:
+  app:
+    image: rfbeskow/nextcloud-custom
+    restart: unless-stopped
+    x-casaos:
+      volumes:
+        - container: /var/www/html
+          description:
+            en_us: 'Container Path: /var/www/html'
+      ports:
+        - container: '80'
+          description:
+            en_us: 'http port'
+    ports:
+      - target: 80
+        published: 8089
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/Nextcloud/html
+        target: /var/www/html
+x-casaos:
+  architectures:
+    - amd64
+  main: app
+  description:
+    en_us: 'Visit homepage: https://hub.docker.com/r/rfbeskow/nextcloud-custom'
+  tagline:
+    en_us: This software is a fork of library and licensed under the GPL v3 License.
+  developer: RFBESKOW
+  author: Roger Beskow
+  icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/nextcloud-icon.png
+  thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/nextcloud-icon.png
+  title:
+    en_us: Nextcloud Customized image for support inotify, zipper, extract apps
+  category: RFBESKOW
+  project_url: https://github.com/engtro/Nextcloud-Custom
+  port_map: '8089'
