@@ -34,6 +34,6 @@ x-casaos:
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/nextcloud-icon.png
   title:
     en_us: Nextcloud Customized image for support inotify, zipper, extract apps
-  category: RFBESKOW
+  category: RFBESKOW-CUSTOM
   project_url: https://github.com/engtro/Nextcloud-Custom
   port_map: '8089'
